@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeDataSourceController.swift
 //  Prototype1
 //
 //  Created by RayRainier on 2/17/17.
@@ -7,19 +7,14 @@
 //
 
 import UIKit
+import LBTAComponents
 
-class ViewController: UIViewController {
+class HomeDataSourceController: DatasourceController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
