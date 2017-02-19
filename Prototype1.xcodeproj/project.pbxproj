@@ -342,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 149B4C11CE9A108472EAF982 /* Pods-Prototype1.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y4YLH4W88M;
 				INFOPLIST_FILE = Prototype1/Info.plist;
@@ -356,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 928D82038FE1BAC417A7C7B1 /* Pods-Prototype1.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y4YLH4W88M;
 				INFOPLIST_FILE = Prototype1/Info.plist;

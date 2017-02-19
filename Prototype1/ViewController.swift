@@ -46,14 +46,25 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return [firstPage, secondPage, thirdPage, fourthPage, fifthPage, sixthPage, lastPage]
     }()
     
+    let pageControl: UIPageControl = {
+        let pc = UIPageControl()
+        pc.pageIndicatorTintColor = .lightGray
+        pc.currentPageIndicatorTintColor = UIColor(r: 247, g: 154, b: 27)
+        pc.numberOfPages = 7
+        return pc
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		view.addSubview(collectionView)
+        view.addSubview(pageControl)
         
         // constraints
         collectionView.anchor(view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor)
+        
+        pageControl.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 40)
         
         // register cell
         collectionView.register(PageCell.self, forCellWithReuseIdentifier: cellId)
