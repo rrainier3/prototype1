@@ -23,18 +23,31 @@ class PageCell: UICollectionViewCell {
     
     let imageView: UIImageView = {
         let iv = UIImageView()
-        //iv.backgroundColor = .yellow
         iv.contentMode = .scaleAspectFill
-        iv.image = UIImage(named: "green_artsy")
+        //iv.image = UIImage(named: "green_artsy")
+        iv.image = UIImage(named: "page1")
+        iv.clipsToBounds = true
         return iv
     }()
     
+    
+    let textView: UITextView = {
+        let tv = UITextView()
+        tv.text = "MOUNTAIN DEW AT THE ALPS"
+        tv.isEditable = false
+        return tv
+    }()
+    
+    
     func setupViews() {
     
-    	backgroundColor = .blue
-        
         addSubview(imageView)
+        addSubview(textView)
+        
         imageView.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor)
+        
+        textView.anchor(nil, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor)
+        textView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.3).isActive = true
         
     }
     
