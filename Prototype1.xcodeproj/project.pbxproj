@@ -14,6 +14,7 @@
 		4F4D3B871E57F7F000CC8CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D3B861E57F7F000CC8CE3 /* Assets.xcassets */; };
 		4F4D3B8A1E57F7F000CC8CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4D3B881E57F7F000CC8CE3 /* LaunchScreen.storyboard */; };
 		4FA2D7A41E5A02DD0077A536 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2D7A31E5A02DD0077A536 /* PageCell.swift */; };
+		4FA2D7A61E5A3F4A0077A536 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2D7A51E5A3F4A0077A536 /* Page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4F4D3B891E57F7F000CC8CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F4D3B8B1E57F7F000CC8CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FA2D7A31E5A02DD0077A536 /* PageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		4FA2D7A51E5A3F4A0077A536 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		928D82038FE1BAC417A7C7B1 /* Pods-Prototype1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototype1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototype1/Pods-Prototype1.release.xcconfig"; sourceTree = "<group>"; };
 		D1A508E3FD3EA1D81DDEE7B5 /* Pods_Prototype1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prototype1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				4F4D3B7F1E57F7EF00CC8CE3 /* AppDelegate.swift */,
+				4FA2D7A51E5A3F4A0077A536 /* Page.swift */,
 				4F4D3B811E57F7EF00CC8CE3 /* ViewController.swift */,
 				4FA2D7A31E5A02DD0077A536 /* PageCell.swift */,
 				4F4D3B831E57F7EF00CC8CE3 /* Main.storyboard */,
@@ -217,6 +220,7 @@
 			files = (
 				4F4D3B821E57F7EF00CC8CE3 /* ViewController.swift in Sources */,
 				4F4D3B801E57F7EF00CC8CE3 /* AppDelegate.swift in Sources */,
+				4FA2D7A61E5A3F4A0077A536 /* Page.swift in Sources */,
 				4FA2D7A41E5A02DD0077A536 /* PageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
