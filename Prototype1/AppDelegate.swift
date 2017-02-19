@@ -20,7 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Ignoring storyboard ...
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: HomeDataSourceController())
+        window?.rootViewController = ViewController()
+        
+        // LBTA Now?
+        //window?.rootViewController = UINavigationController(rootViewController: HomeDataSourceController())
+        
         
         return true
     }
