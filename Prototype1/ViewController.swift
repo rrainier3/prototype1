@@ -105,6 +105,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             
             pageControl.currentPage = pageNumber
         
+            // we are on the last page
+            if pageNumber == pages.count {
+                pageControl.isHidden = true
+            } else {
+                pageControl.isHidden = false
+            }
+        
+            
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: { 
+                
+                self.view.layoutIfNeeded()
+                
+            }, completion: nil)
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
