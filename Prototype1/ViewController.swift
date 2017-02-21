@@ -61,6 +61,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return button
     }()
     
+    let nextButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Next", for: .normal)
+        button.setTitleColor(.orange, for: .normal)
+        return button
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +75,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 		view.addSubview(collectionView)
         view.addSubview(pageControl)
         view.addSubview(skipButton)
+        view.addSubview(nextButton)
         
         // constraints
         collectionView.anchor(view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor)
@@ -76,6 +84,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         // skip button
         skipButton.anchor(view.topAnchor, left: view.leftAnchor, bottom: nil, right: nil, topConstant: 16, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 50)
+
+        // next button
+        nextButton.anchor(view.topAnchor, left: nil, bottom: nil, right: view.rightAnchor, topConstant: 16, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 50)
         
         // register cell
         collectionView.register(PageCell.self, forCellWithReuseIdentifier: cellId)
