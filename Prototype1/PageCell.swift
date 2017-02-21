@@ -78,12 +78,14 @@ class PageCell: UICollectionViewCell {
         addSubview(textView)
         addSubview(lineSeparatorView)
         
-        imageView.anchor(topAnchor, left: leftAnchor, bottom: textView.topAnchor, right: rightAnchor)
+        imageView.anchorToTop(topAnchor, left: leftAnchor, bottom: textView.topAnchor, right: rightAnchor)
         
-        textView.anchor(nil, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 16, bottomConstant: 0, rightConstant: 16, widthConstant: 0, heightConstant: 0)
+        textView.anchorWithConstantsToTop(nil, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 16, bottomConstant: 0, rightConstant: 16)
+        
         textView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.3).isActive = true
         
-        lineSeparatorView.anchor(nil, left: leftAnchor, bottom: textView.topAnchor, right: rightAnchor)
+        lineSeparatorView.anchorToTop(nil, left: leftAnchor, bottom: textView.topAnchor, right: rightAnchor)
+        
         lineSeparatorView.heightAnchor.constraint(equalToConstant: 1).isActive = true
     }
     
