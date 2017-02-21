@@ -67,7 +67,7 @@ class PageCell: UICollectionViewCell {
     
     let lineSeparatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(r: 230, g: 230, b: 230)
+        view.backgroundColor = .lightGray
         return view
     }()
     

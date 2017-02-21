@@ -49,7 +49,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     lazy var pageControl: UIPageControl = {
         let pc = UIPageControl()
         pc.pageIndicatorTintColor = .lightGray
-        pc.currentPageIndicatorTintColor = UIColor(r: 247, g: 154, b: 27)
+        pc.currentPageIndicatorTintColor = .orange
         pc.numberOfPages = self.pages.count + 1
         return pc
     }()

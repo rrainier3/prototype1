@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LBTAComponents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,9 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = ViewController()
-        
-        // LBTA Now?
-        //window?.rootViewController = UINavigationController(rootViewController: HomeDataSourceController())
         
         
         return true
