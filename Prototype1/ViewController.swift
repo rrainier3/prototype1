@@ -54,17 +54,28 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return pc
     }()
     
+    let skipButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Skip", for: .normal)
+        button.setTitleColor(.orange, for: .normal)
+        return button
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		view.addSubview(collectionView)
         view.addSubview(pageControl)
+        view.addSubview(skipButton)
         
         // constraints
         collectionView.anchor(view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor)
         
         pageControl.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 40)
+        
+        // skip button
+        skipButton.anchor(view.topAnchor, left: view.leftAnchor, bottom: nil, right: nil, topConstant: 16, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 50)
         
         // register cell
         collectionView.register(PageCell.self, forCellWithReuseIdentifier: cellId)
